@@ -8,12 +8,10 @@ import { NavLink, withRouter } from 'react-router-dom';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 // Component Imports
-import NavBar from './NavBar';
-import Home from './Home';
-import List from './List';
-import CommunityHome from './CommunityHome';
-import StudentSurvey from './Survey/StudentSurvey';
-import FormStress from './Survey/FormStress';
+import NavBar from './Survey/NavBar';
+import Home from './Survey/Home';
+import List from './Survey/List';
+import CommunityHome from './Survey/CommunityHome';
 
 class App extends Component {
     render() {
@@ -23,8 +21,7 @@ class App extends Component {
                     <NavBar />
                     <Route exact path="/" component={Home} />
                     <Route path="/list" component={List} />
-                    <Route path="/survey" component={StudentSurvey} />
-                    <Route path="/stressor-survey" component={FormStress} />
+                    
                     <Route path="/community" component={CommunityHome} />
                 </BrowserRouter>
             </div>
